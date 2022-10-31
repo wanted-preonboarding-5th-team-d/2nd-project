@@ -16,10 +16,6 @@ module.exports = new EntitySchema({
         quantity_max: {
             type: "int",
             nullable: false
-        },
-        country_idx: {
-            type: "int",
-            nullable: false
         }
     },
 });

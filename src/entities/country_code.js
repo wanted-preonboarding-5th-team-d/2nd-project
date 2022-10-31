@@ -13,7 +13,7 @@ module.exports = new EntitySchema({
             type: "varchar",
             nullable: false
         },
-        country_decode: {
+        country_dcode: {
             type: "varchar",
             nullable: false
         },

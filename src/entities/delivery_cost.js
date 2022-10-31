@@ -18,7 +18,7 @@ module.exports = new EntitySchema({
             nullable: false
         },
         price: {
-            type: "decimal",
+            type: "decimal", precision: 10, scale: 2 ,
             nullable: false
         }
     },
@@ -27,7 +27,7 @@ module.exports = new EntitySchema({
             type: 'many-to-one',
             target: 'quantity_range',
             joinColumn: {
-                name: 'id',
+                name: 'quantity_range_id',
             }
         }
     },

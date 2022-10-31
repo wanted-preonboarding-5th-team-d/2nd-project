@@ -23,7 +23,7 @@ module.exports = new EntitySchema({
             type: 'many-to-one',
             target: 'quantity_range',
             joinColumn: {
-                name: 'id',
+                name: 'quantity_range_id',
             }
         }
     },

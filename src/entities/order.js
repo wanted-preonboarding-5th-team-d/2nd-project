@@ -9,57 +9,61 @@ module.exports = new EntitySchema({
             type: "int",
             generated: true
         },
+        Date: {
+            type: "int",
+            nullable: false,
+        },
+        pay_state: {
+            type: "varchar",
+            nullable: false,
+        },
         quantity_id: {
             type: "int",
             nullable: false,
         },
         price: {
-            type: "decimal",
+            type: "decimal", precision: 10, scale: 2 ,
+            nullable: false,
+        },
+        buyr_city: {
+            type: "varchar",
+            nullable: false,
+        },
+        buyr_country: {
+            type: "varchar",
             nullable: false,
         },
         buyer_name: {
             type: "varchar",
-            nullable: false,
+            nullable: true,
         },
-        buyer_city: {
+        buyr_zipx: {
             type: "varchar",
-            nullable: false,
-        },
-        coupon_id: {
-            type: "int",
-            nullable: false
-        },
-        country_code_id: {
-            type: "int",
-            nullable: false,
-        },
-        buyer_zipx: {
-            type: "varchar",
-            nullable: false,
+            nullable: true,
         },
         vccode: {
-            type: "int",
+            type: "varchar",
             nullable: false,
         },
         delivery_num: {
             type: "varchar",
             nullable: false,
         },
-        delivery_status: {
+        coupon_id: {
             type: "int",
-            nullable: false,
+            nullable: true,
+        },
+        delivery_status: {
+            type: "varchar",
+            nullable: true,
         },
         discount_price : {
-            type : "decimal",
+            type : "decimal", precision: 10, scale: 2 ,
             nullable : true
         },
         order_date: {
             type: "timestamp",
             default: () => 'CURRENT_TIMESTAMP',
-        },
-        payment_state: {
-            type: "int",
-            nullable: false,
         },
         created_at: {
             type: "timestamp",
@@ -86,9 +90,9 @@ module.exports = new EntitySchema({
                 name: 'country_code_id',
             }
         },
-        coupons: {
-            type: 'many-to-one',
-            target: 'coupon',
+        coupon_downloads: {
+            type: 'one-to-one',
+            target: 'coupon_download',
             joinColumn: {
                 name: 'coupon_id',
             }

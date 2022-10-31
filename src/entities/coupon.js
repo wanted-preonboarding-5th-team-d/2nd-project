@@ -14,7 +14,7 @@ module.exports = new EntitySchema({
             nullable: false
         },
         discount: {
-            type: "decimal",
+            type: "decimal", precision: 4, scale: 2 ,
             nullable: false
         },
         created_at: {
