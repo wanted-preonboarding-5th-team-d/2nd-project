@@ -61,6 +61,10 @@ module.exports = new EntitySchema({
             type : "decimal", precision: 10, scale: 2 ,
             nullable : true
         },
+        final_price : {
+            type : "decimal", precision: 10, scale: 2 ,
+            nullable : true
+        },
         order_date: {
             type: "timestamp",
             default: () => 'CURRENT_TIMESTAMP',

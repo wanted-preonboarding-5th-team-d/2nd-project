@@ -15,11 +15,12 @@ module.exports = new EntitySchema({
         },
         code: {
             type: "varchar",
-            nullable: false
+            nullable: true
         },
         is_used: {
-            type: "int",
-            nullable: false
+            type: "varchar",
+            nullable: false,
+            default: () => '"NO"',
         },
         downloaded_at: {
             type: "timestamp",
