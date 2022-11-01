@@ -1,5 +1,5 @@
 const microtime = require("microtime");
-const downloadCouponDao  = require("../models/couponDownloadDao");
+const couponDao  = require("../models/couponDao");
 const decimal = [];
 const baseList = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const baseSize = baseList.length;
@@ -76,7 +76,7 @@ const makeCode = async (coupon_id) => {
 
 	const couponCode = frontNum + "-" + time + "-" + lastNum;
 
-	await downloadCouponDao.download(coupon_id,couponCode);
+	await couponDao.download(coupon_id,couponCode);
 
 	return couponCode;
 
