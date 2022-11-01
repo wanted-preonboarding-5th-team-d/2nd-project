@@ -17,8 +17,8 @@ const AppDataSource = new DataSource({
   database: process.env.TYPEORM_DATABASE,
   TIME_ZONE: process.env.TIME_ZONE,
   entities: [delivery_cost, quantity_range, quantity, order, country_code, coupon_downloads, coupon_type_id, coupon],
-  synchronize: true,
-  logging: false,
+  synchronize: false,
+  logging: true,
 });
 
 module.exports = { AppDataSource };
