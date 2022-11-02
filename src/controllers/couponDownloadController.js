@@ -13,10 +13,10 @@ const download = async(req,res) => {
 
     const {coupon_id} = req.body;
     
-    await downloadCouponService.download(coupon_id);
+    const code = await downloadCouponService.download(coupon_id);
 
     res.status(statusCode.CREATED).send(
-        util.success(statusCode.CREATED, responseMessage.COUPON_DOWNLOAD_SUCCESS)
+        util.success(statusCode.CREATED, responseMessage.COUPON_DOWNLOAD_SUCCESS,code)
     );
 }
 

@@ -13,9 +13,9 @@ const download = async(coupon_id) => {
 
     await couponExist.checkCoupon(coupon_id);
 
-    await couponCode.makeCode(coupon_id);
+    const code = await couponCode.makeCode(coupon_id);
 
-    return true;
+    return code;
 
 }
 

@@ -78,7 +78,7 @@ const makeCode = async (coupon_id) => {
 
 	await downloadCouponDao.download(coupon_id,couponCode);
 
-	return true;
+	return couponCode;
 
 }
 
