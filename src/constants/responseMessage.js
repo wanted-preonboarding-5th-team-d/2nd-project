@@ -15,6 +15,9 @@ module.exports = {
   SUCCESS: "성공하였습니다.",
 
   //쿠폰다운로드
-  COUPON_DOWNLOAD_SUCCESS : "쿠폰이 다운로드 되었습니다."
+  COUPON_DOWNLOAD_SUCCESS: "쿠폰이 다운로드 되었습니다.",
 
+  //주문
+  READ_ORDER_SUCCESS: "주문 내역 조회 성공",
+  UPDATE_DELIVERY_STATUS_SUCCESS: "배송 정보 수정 성공",
 };
