@@ -5,16 +5,13 @@ module.exports = {
   DB_ERROR: "데이터베이스 오류",
   INTERNAL_SERVER_ERROR: "서버 내 오류",
 
-  //통계
-  GET_LOG_SUCCESS: "이용 통계 조회 성공",
+  //쿠폰
+  CREATE_TYPE_SUCCESS: "쿠폰유형을 생성하였습니다",
+  ALREADY_EXIST_TYPE: "이미 존재하는 타입입니다.",
+  DELETE_TYPE_SUCCESS: "쿠폰유형을 삭제하였습니다",
+  NOT_EXIST_TYPE: "존재하지않는 타입입니다.",
+  EMPTY_TYPE: "타입을 입력해주세요.",
+  EDIT_TYPE_SUCCESS: "타입을 수정하였습니다.",
+  SUCCESS: "성공하였습니다."
 
-  //사용자
-  SIGNUP_SUCCESS: "signup success",
-  SIGNOUT_SUCCESS: "signout success",
-  SIGNIN_SUCCESS: "signin success",
-
-  //쿠폰다운로드 
-  COUPON_DOWNLOAD_SUCCESS : "해당쿠폰이 발급되었습니다."
-
-  
 };

@@ -1,10 +1,8 @@
 const express = require("express");
 const router = express.Router();
-const testRouter = require("./testRouter")
-const downloadCouponRouter = require("./couponDownloadRouter");
 
-router.use("/test", testRouter.router)
+const couponRouter = require("./couponRouter")
 
-router.use("/coupon",downloadCouponRouter.router);
+router.use("/coupon", couponRouter.router)
 
 module.exports = router;
