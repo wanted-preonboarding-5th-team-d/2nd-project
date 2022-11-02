@@ -12,6 +12,9 @@ module.exports = {
   NOT_EXIST_TYPE: "존재하지않는 타입입니다.",
   EMPTY_TYPE: "타입을 입력해주세요.",
   EDIT_TYPE_SUCCESS: "타입을 수정하였습니다.",
-  SUCCESS: "성공하였습니다."
+  SUCCESS: "성공하였습니다.",
+
+  //쿠폰다운로드
+  COUPON_DOWNLOAD_SUCCESS : "쿠폰이 다운로드 되었습니다."
 
 };

@@ -3,7 +3,7 @@ const router = express.Router();
 
 const downloadCouponController = require("../controllers/couponDownloadController");
 
-router.post("/download",downloadCouponController.download)
+router.post("/coupon",downloadCouponController.download)
 
 module.exports = {
     router
