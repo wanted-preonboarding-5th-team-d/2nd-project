@@ -11,5 +11,10 @@ module.exports = {
   //사용자
   SIGNUP_SUCCESS: "signup success",
   SIGNOUT_SUCCESS: "signout success",
-  SIGNIN_SUCCESS: "signin success"
+  SIGNIN_SUCCESS: "signin success",
+
+  //쿠폰다운로드 
+  COUPON_DOWNLOAD_SUCCESS : "해당쿠폰이 발급되었습니다."
+
+  
 };
