@@ -13,4 +13,5 @@ module.exports = {
   EMPTY_TYPE: "타입을 입력해주세요.",
   EDIT_TYPE_SUCCESS: "타입을 수정하였습니다.",
   SUCCESS: "성공하였습니다."
+
 };
