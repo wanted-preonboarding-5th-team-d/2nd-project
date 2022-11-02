@@ -38,7 +38,9 @@
 ## 평가항목
 # ERD
 
-![아이앰렙]
+![아이앰렙 (1)](https://user-images.githubusercontent.com/64879792/199387215-585286dd-8dc8-4540-a84a-437a88e0e488.png)
+
+
 # API Documentation
 
 [API 명세](https://www.notion.so/API-df03f5ea2c934cb39e1cdb2bbb672a94)
