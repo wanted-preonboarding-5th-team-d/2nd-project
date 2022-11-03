@@ -8,6 +8,7 @@ module.exports = {
   //쿠폰
   CREATE_TYPE_SUCCESS: "쿠폰유형을 생성하였습니다",
   ALREADY_EXIST_TYPE: "이미 존재하는 타입입니다.",
+  ALREADY_EXIST_DISCOUNT: "이미 존재하는 할인입니다.",
   DELETE_TYPE_SUCCESS: "쿠폰유형을 삭제하였습니다",
   NOT_EXIST_TYPE: "존재하지않는 타입입니다.",
   EMPTY_TYPE: "타입을 입력해주세요.",
@@ -20,4 +21,14 @@ module.exports = {
   //주문
   READ_ORDER_SUCCESS: "주문 내역 조회 성공",
   UPDATE_DELIVERY_STATUS_SUCCESS: "배송 정보 수정 성공",
+
+  //할인
+  CREATE_DISCOUNT_SUCCESS: "할인유형이 생성되었습니다.",
+  NOT_EXIST_TYPE: "할인타입이 존재하지않습니다.",
+  EDIT_DISCOUNT_SUCCESS: "할인유형이 수정되었습니다.",
+  NOT_EXIST_DISCOUNT: "할인유형이 존재하지않습니다.",
+  OVER_PRICE: "할인은 원화기준 10,000원 달러기준 10달러 미만으로 가능합니다.",
+  DISCOUNT_ALREADY_EXIST: "동일한 할인유형이 존재합니다.",
+  EMPTY: "빈칸없이 입력해주세요.",
+  SUCCESS: "성공하였습니다."
 };

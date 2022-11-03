@@ -1,9 +1,9 @@
 const Error = require("../middlewares/errorConstructor");
-const downloadCouponDao = require("../models/couponDownloadDao");
+const couponDao = require("../models/couponDao");
 
 const checkCoupon = async(coupon_id) => {
 
-    const couponExist = await downloadCouponDao.getCouponInfo(coupon_id);
+    const couponExist = await couponDao.getCouponInfo(coupon_id);
 
     if( couponExist.length > 0 ) {
 
